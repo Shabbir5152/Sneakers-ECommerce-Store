@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shop - Velocity Sneakers</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Shop</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="stores.html">Stores</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="shop-section">
+            <div class="container">
+                <h2>Shop</h2>
+                <div class="grid-container">
+                    <div class="grid-item">
+                        <img src="pictures/Adidas Originals SAMBA OG.webp" alt="Sneaker 1">
+                        <h3>Adidas Originals SAMBA OG</h3>
+                        <p class="price">₹11,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/BarbourNubuchLeatherReflect.webp" alt="Sneaker 10">
+                        <h3>Barbour Nubuch Leather</h3>
+                        <p class="price">₹19,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/ArmaniExchangeTumbled.webp" alt="Sneaker 2">
+                        <h3>Armani Exchange Tumbled</h3>
+                        <p class="price">₹23,499.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NikeAirForce1Green.webp" alt="Sneaker 10">
+                        <h3>Nike AirForce 1 Green</h3>
+                        <p class="price">₹32,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NewBalance2002REclipse.webp" alt="Sneaker 10">
+                        <h3>New Balance 2002R Eclipse</h3>
+                        <p class="price">₹17,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/SkechersSummitsNewWorld.webp" alt="Sneaker 10">
+                        <h3>Skechers Summits NewWorld</h3>
+                        <p class="price">₹7,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NikeAirMax90s.webp" alt="Sneaker 10">
+                        <h3>Nike Air Max 90s</h3>
+                        <p class="price">₹41,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NewBalance515V3.webp" alt="Sneaker 10">
+                        <h3>New Balance 515 V3</h3>
+                        <p class="price">₹27,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NikeAirMaxExcee.webp" alt="Sneaker 10">
+                        <h3>Nike Air Max Excee</h3>
+                        <p class="price">₹38,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/NikeDunkLowRetro.webp" alt="Sneaker 10">
+                        <h3>Nike Dunk Low Retro</h3>
+                        <p class="price">₹51,999.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <div class="grid-item">
+                        <img src="pictures/OffLimitsRaviStyled.webp" alt="Sneaker 10">
+                        <h3>Off Limits Ravi Styled</h3>
+                        <p class="price">₹9,799.99</p>
+                        <button class="add-to-cart" onclick="addToCart()">Add to Cart</button>
+                    </div>
+                    <script>
+                        let inventory = 0;
+                    
+                        function addToCart() {
+                            var isAvailable = checkAvailability();
+                            if (isAvailable) {
+                                alert("Product added to cart successfully!");
+                            } 
+                            else {
+                                alert("Sorry, this product is currently out of stock.");
+                            }
+                        }
+                        function checkAvailability() {
+                            return inventory > 0;
+                        }
+                    </script>
+                </div>
+            </div>
+        </section>
+        
+    </main>
+    <footer>
+        <p>&copy; 2024 Sneaker Shop</p>
+    </footer>
+    
+</body>
+</html>
